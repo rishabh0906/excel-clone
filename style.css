@@ -1,0 +1,204 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin:0;
+    overflow: hidden;
+}
+.container{
+
+    height: 100vh;
+    width:100vw;
+
+}
+.title-bar{
+
+    display: flex;
+    width: 100%;
+    height: 4%;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    background-color: rgb(29, 105, 29);
+    color:white;
+    
+}
+.menu-bar{
+    display: flex;
+   align-items: center;
+   height: 4%;
+   width: 100%;
+   
+    
+}
+.menu-bar p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin: 0;
+    width: 4%;
+    
+  
+}
+.menu-bar p:hover,.menu-bar-option-selected
+{
+    background-color:rgb(29, 105, 29) ;
+    color: white;
+}
+
+.menu-options{
+   
+    height: 12%;
+    width: 100%;
+    display: flex;
+}
+.formula-bar {
+    height: 4%;
+    width: 100%;
+    display: flex;
+    
+  }
+  
+  .formula-bar input {
+    border: 1px solid rgb(29, 105, 29);
+    height: 100%;
+    outline: none;
+  }
+  
+  #select-cell {
+    width: 20%;
+  }
+  
+  #complete-formula {
+    width: 80%;
+  }
+  
+  .grid {
+    width: 100%;
+    height: 76.5%;
+    padding-left: 30px;
+    padding-top: 30px;
+    position: relative;
+    overflow:auto;
+  }
+  
+  .sheets-bar {
+    height: 4%;
+    width: 100%;
+    border: 1px solid;
+  }
+  
+  .sheets-bar div {
+    border: 1px solid;
+    height: 100%;
+    width: 20%;
+    display: flex;
+    color: rgb(29, 105, 29);
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .menu-options div {
+    border: 1px solid;
+   
+    display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  }
+  
+  .bui,
+  .colors,
+  .alignment {
+    width: 20%;
+  }
+  
+  .font-styles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+  }
+  .blank-corner {
+    height: 30px;
+    width: 30px;
+    background-color: rgb(41, 39, 39);
+    position: fixed;
+    top: 24vh;
+    left: 0;
+    z-index: 3;
+  }
+  
+  .column-tags {
+    position: absolute;
+    display: flex;
+    top: 0;
+    left: 30px;
+  }
+  
+  .column-tag-cell {
+    padding-top: 4px;
+    background-color: rgb(29, 105, 29);;
+    height: 30px;
+    width: 80px;
+    border: 1px solid white;
+    color: white;
+    text-align: center;
+    /* flex-shrink: 0; */
+  }
+  
+  .row-number-cell {
+    height: 30px;
+    width: 30px;
+    border: 1px solid white;
+    color: white;
+    text-align: center;
+    background-color: rgb(29, 105, 29);;
+    padding-top: 5px;
+  }
+  
+  .row-numbers {
+    position: absolute;
+    left: 0;
+    top: 30px;
+  }
+  
+  .row {
+    display: flex;
+  }
+  
+  .cell {
+    width: 80px;
+    height: 30px;
+    background-color: white;
+    border: 1px solid rgb(29, 105, 29);
+    flex-shrink: 0;
+    
+    outline: none;
+  }
+  .grid-selected-cell{
+    border: 3px solid rgb(29, 105, 29);;
+  }
+
+  .size{
+  height:25px;
+  width: 7rem;
+  }
+
+  .decrease{
+    height: 100%;
+    width: 1.5rem;
+  }
+
+  .current{
+    height: 100%;
+    width: 4rem;
+  }
+
+  .increase
+  {
+    height: 100%;
+    width: 1.5rem;
+  }
+  
