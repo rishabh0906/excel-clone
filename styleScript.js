@@ -98,6 +98,9 @@ increase.addEventListener("click",(e)=>{
     {
     currentSize.innerText=curr+1;
     oldCell.style.fontSize=`${curr+1}px`;
+    let address = oldCell.getAttribute("data-address");
+    dataObj[address].fontSize = curr+1;
+    
     }
    
 });
@@ -109,6 +112,8 @@ decrease.addEventListener("click",(e)=>{
     {
     currentSize.innerText=curr-1;
     oldCell.style.fontSize=`${curr-1}px`;
+    let address = oldCell.getAttribute("data-address");
+    dataObj[address].fontSize= curr-1;
     
     
     }

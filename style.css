@@ -211,7 +211,7 @@ body{
     width: 5rem;
     background: white;
     top: 4vh;
-    left: 0;
+    left: 1vh;
     z-index: 4;
     display: flex;
     flex-direction: column;
