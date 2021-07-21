@@ -131,10 +131,11 @@ body{
   }
   
   .column-tags {
-    position: absolute;
-    display: flex;
-    top: 0;
-    left: 30px;
+  position: fixed;
+  top: 24vh;
+  left : 30px;
+  z-index: 3;
+  display: flex;
   }
   
   .column-tag-cell {
@@ -159,9 +160,11 @@ body{
   }
   
   .row-numbers {
-    position: absolute;
-    left: 0;
-    top: 30px;
+    position: fixed;
+    top: calc( 24vh + 30px );
+    left: 0px;
+    z-index: 3;
+
   }
   
   .row {
@@ -223,3 +226,5 @@ body{
     text-align: center;
     color: black;
   }
+
+  

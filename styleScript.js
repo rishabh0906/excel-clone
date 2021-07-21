@@ -2,10 +2,10 @@ let decorationSpans = document.querySelectorAll(".bui span");
 let alignmentSpans = document.querySelectorAll(".alignment span");
 let colorSpans = document.querySelectorAll(".colors span");
 let font_family = document.querySelector("#cell-font-family");
-let increase=document.querySelector(".increase");
-let decrease=document.querySelector(".decrease");
+let increase = document.querySelector(".increase");
+let decrease = document.querySelector(".decrease");
 
-let currentSize=document.querySelector(".current");
+let currentSize = document.querySelector(".current");
 
 
 
@@ -91,30 +91,40 @@ font_family.addEventListener("click", (e) => {
 
 });
 
-increase.addEventListener("click",(e)=>{
+increase.addEventListener("click", (e) => {
 
-    let curr=Number(currentSize.innerText);
-    if(curr<50)
-    {
-    currentSize.innerText=curr+1;
-    oldCell.style.fontSize=`${curr+1}px`;
-    let address = oldCell.getAttribute("data-address");
-    dataObj[address].fontSize = curr+1;
-    
+    let curr = Number(currentSize.innerText);
+    if (curr < 50) {
+        currentSize.innerText = curr + 1;
+        oldCell.style.fontSize = `${curr + 1}px`;
+        let address = oldCell.getAttribute("data-address");
+        dataObj[address].fontSize = curr + 1;
+
     }
-   
+
 });
-decrease.addEventListener("click",(e)=>{
+decrease.addEventListener("click", (e) => {
 
-    let curr=Number(currentSize.innerText);
+    let curr = Number(currentSize.innerText);
 
-    if(curr>0)
-    {
-    currentSize.innerText=curr-1;
-    oldCell.style.fontSize=`${curr-1}px`;
-    let address = oldCell.getAttribute("data-address");
-    dataObj[address].fontSize= curr-1;
-    
-    
+    if (curr > 0) {
+        currentSize.innerText = curr - 1;
+        oldCell.style.fontSize = `${curr - 1}px`;
+        let address = oldCell.getAttribute("data-address");
+        dataObj[address].fontSize = curr - 1;
+
+
     }
+});
+
+
+grid.addEventListener("scroll", function (e) {
+
+    let currDistanceFromTop = e.currentTarget.scrollTop; //vertical
+    let currDistanceFromleft = e.currentTarget.scrollLeft;
+
+    columnTags.style.transform = `translateX(-${currDistanceFromleft}px)`;
+
+    rowNumbers.style.transform = `translateY(-${currDistanceFromTop}px)`;
+
 });
