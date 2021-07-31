@@ -1,95 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<link rel="stylesheet" href="style.css">
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap" rel="stylesheet">
+  </head>
+  <link rel="stylesheet" href="style.css" />
+  <link
+    href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet"
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap"
+    rel="stylesheet"
+  />
 
-
-<body>
+  <body>
     <div class="container">
-        <div class="title-bar" contenteditable="true">Book -1 </div>
-        <div class="menu-bar">
-            <p>File</p>
-            <p>Edit</p>
-            <p>Help</p>
+      <div class="title-bar" contenteditable="true">Book -1</div>
+      <div class="menu-bar">
+        <p>File</p>
+        <p>Edit</p>
+        <p>Help</p>
+      </div>
+      <div class="menu-options">
+        <div class="bui">
+          <span class="material-icons"> format_bold </span>
+          <span class="material-icons"> format_italic </span>
+          <span class="material-icons"> format_underlined </span>
         </div>
-        <div class="menu-options">
-            <div class="bui">
-                <span class="material-icons"> format_bold </span>
-                <span class="material-icons"> format_italic </span>
-                <span class="material-icons"> format_underlined </span>
+        <div class="font-styles">
+          <select id="cell-font-family">
+            <option value="Arial" style="font-family: Arial">Arial</option>
+            <option
+              value=" 'Courier New', Courier, monospace"
+              style="font-family: 'Courier New', Courier, monospace"
+            >
+              Courier New
+            </option>
+            <option value=" sans-serif" style="font-family: sans-serif">
+              sans-serif
+            </option>
+            <option
+              value="'Times New Roman', Times, serif"
+              style="font-family: 'Times New Roman', Times, serif"
+            >
+              times new roman
+            </option>
+            <option value="Calibri" style="font-family: Calibri">
+              Calibri
+            </option>
+            <option
+              value="Franklin Gothic Medium"
+              style="font-family: 'Franklin Gothic Medium'"
+            >
+              Franklin Gothic Medium
+            </option>
+            <option value=" cursive" style="font-family: cursive">
+              cursive
+            </option>
+            <option value="Segoe UI" style="font-family: 'Segoe UI'">
+              Segoe UI
+            </option>
+            <option value="Trebuchet MS" style="font-family: 'Trebuchet MS'">
+              Trebuchet MS
+            </option>
+            <option
+              value="Akaya Kanadaka"
+              style="font-family: 'Akaya Kanadaka', cursive"
+            >
+              Akaya Kanadaka
+            </option>
+            <option
+              value="Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif"
+              style="
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold',
+                  sans-serif;
+              "
+            >
+              Haettenschweiler
+            </option>
+          </select>
+          <div class="size">
+            <div class="decrease">
+              <span class="material-icons"> remove </span>
             </div>
-            <div class="font-styles">
-                <select id="cell-font-family">
-                    <option value="Arial" style="font-family: Arial;">Arial</option>
-                    <option value=" 'Courier New', Courier, monospace"
-                        style=" font-family: 'Courier New', Courier, monospace;">Courier New
-                    </option>
-                    <option value=" sans-serif" style="font-family: sans-serif;"> sans-serif</option>
-                    <option value="'Times New Roman', Times, serif"
-                        style="font-family: 'Times New Roman', Times, serif;">times new
-                        roman</option>
-                    <option value="Calibri" style="font-family: Calibri;"> Calibri </option>
-                    <option value="Franklin Gothic Medium" style="font-family: 'Franklin Gothic Medium';">Franklin
-                        Gothic Medium</option>
-                    <option value=" cursive" style="font-family: cursive;"> cursive</option>
-                    <option value="Segoe UI" style="font-family: 'Segoe UI';">Segoe UI</option>
-                    <option value="Trebuchet MS" style="font-family: 'Trebuchet MS';">Trebuchet MS
-                    </option>
-                    <option value="Akaya Kanadaka" style="font-family: 'Akaya Kanadaka', cursive;">Akaya Kanadaka
-                    </option>
-                    <option value="Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif"
-                        style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif">Haettenschweiler
-                    </option>
-                </select>
-                <div class="size">
-                    <div class="decrease"> <span class="material-icons">
-                            remove
-                        </span> </div>
-                    <div class="current">16</div>
-                    <div class="increase"><span class="material-icons">
-                            add
-                        </span></div>
-
-                </div>
+            <div class="current">16</div>
+            <div class="increase">
+              <span class="material-icons"> add </span>
             </div>
-            <div class="alignment">
-                <span class="material-icons"> format_align_left </span>
-                <span class="material-icons"> format_align_center </span>
-                <span class="material-icons"> format_align_right </span>
-            </div>
-            <div class="colors">
-                <span class="material-icons"> format_color_text </span>
-                <span class="material-icons"> format_color_fill </span>
-            </div>
-
+          </div>
         </div>
-        <div class="formula-bar">
-            <input type="text" id="select-cell" />
-            <input type="text" id="complete-formula" />
+        <div class="alignment">
+          <span class="material-icons"> format_align_left </span>
+          <span class="material-icons"> format_align_center </span>
+          <span class="material-icons"> format_align_right </span>
         </div>
-        <div class="grid">
-            <div class="blank-corner"></div>
-            <div class="column-tags"></div>
-            <div class="row-numbers"></div>
+        <div class="colors">
+          <span class="material-icons"> format_color_text </span>
+          <span class="material-icons"> format_color_fill </span>
         </div>
-        <div class="sheet-bar">
-            <div class="sheet">Sheet-1</div>
-        </div>
-
+      </div>
+      <div class="formula-bar">
+        <input type="text" id="select-cell" />
+        <input type="text" id="complete-formula" />
+      </div>
+      <div class="grid">
+        <div class="blank-corner"></div>
+        <div class="column-tags"></div>
+        <div class="row-numbers"></div>
+      </div>
+      <div class="sheet-bar">
+        <div class="sheet">Sheet-1</div>
+      </div>
     </div>
-    <script src="script2.js"></script>
     <script src="script.js"></script>
     <script src="styleScript.js"></script>
-</body>
-
+  </body>
 </html>
