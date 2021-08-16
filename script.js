@@ -1,3 +1,6 @@
+
+console.log("hi!!");
+
 let body = document.querySelector("body");
 let dataObj = {};
 body.spellcheck = false;
@@ -274,7 +277,6 @@ function AddFormula(formulae)
   }
 
   formulae = formulaArr.join(" ");
-  console.log(formulae);
   let newValue = eval(formulae);
   dataObj[selectedCellAddress].value = newValue;
   let selectedCellDownstream = dataObj[selectedCellAddress].downstream;
